@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Monster Hunter World fansite</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        
+    </head>
+    <body>          
+        <header id="branding">
+            <h1>Monster Hunter World</h1>
+            <p>fansite</p>
+        </header>
+        <nav class="navbar" id="navigation">                      
+            <a href="index.html">Home</a>
+            <a href="PlayStyles.html">Play Styles</a>
+            <a href="Monsters.html">Monsters</a>
+            <a href="otherinfo.html">Other info</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+            </a>                   
+        </nav>       
+        <section id="content">
+            <div class="gallery_box">               
+                <h4>Gallery</h4>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                    </div>
+
+                    <img id="img1" src="images/image18.jpg" alt="screenshot MHW" class = "gallery"/>
+                    
+                    <img id="img2" src="images/image20.png" alt="screenshot MHW" class = "gallery"/>
+                
+                    <img id="img3" src="images/image21.png" alt="screenshot MHW" class = "gallery"/>
+                
+                    <img id="img4" src="images/image22.png" alt="screenshot MHW" class = "gallery"/>
+                
+                    <img id="img5" src="images/image23.png" alt="screenshot MHW" class = "gallery"/> 
+                
+                    <img id="img6" src="images/image24.png" alt="screenshot MHW" class = "gallery"/>
+                
+                    <img id="img7" src="images/image25.jpg" alt="screenshot MHW" class = "gallery"/>
+                
+                    <img id="img8" src="images/image26.jpg" alt="screenshot MHW" class = "gallery"/>
+                
+                    <img id="img9" src="images/image27.png" alt="screenshot MHW" class = "gallery"/>
+                
+                    <img id="img10" src="images/image28.png" alt="screenshot MHW" class = "gallery"/>
+            
+                    <img id="img11" src="images/image29.jpg" alt="screenshot MHW" class = "gallery"/>
+                
+                    <img id="img12" src="images/image30.png" alt="screenshot MHW" class = "gallery"/>       
+            </div>
+            
+            <div id="intro">                
+                    <h3>Tips and Tricks</h3>
+                    <h4>Items for each hunt</h4>
+                    <ul>
+                        <li>Potion</li>
+                        <li>Mega-Potion</li>
+                        <li>Lifepowder-"important in party hunt"</li>
+                        <li>Tranqbomb</li>
+                        <li>Max potion</li>
+                        <li>Pitfall trap</li>
+                        <li>Shock trap</li>
+                        <li>Armour charm</li>
+                        <li>Power charm</li>
+                        <li>Armour talon</li>
+                        <li>Power talon</li>
+                        <li>Flash bombs</li>
+                        <li>Sonic bombs-"depending on the monster" e.g. Diablos</li>
+                        <li>Mega juice-"optional"</li>
+                        <li>Cool drink-"depends on the environment"</li>
+                        <li>Hot drink-"depends on the environment"</li>
+                        <li>Drinks that cures status ailments depending on the monster</li>
+                        <li>Large barrel bomb+-"for sleep bombing"</li>
+                    </ul>
+                    <h4>Hunting</h4>
+                    <ul>
+                        <li>Lookout for patterns on how monsters attack and dodge or
+                            defend accordingly. Once you get used to a monster's movements
+                            then it will be easier to land attacks in a precise moment.</li>
+                        <li>When in party, keep a close watch to each member's health and use
+                            lifepowder during emergencies.</li>
+                        <li>Hammer users tend to aim for a monster's head, leave that area to them.</li>
+                        <li>When a monster is put to sleep or sleeping, don't attack it some party
+                            members might put bombs that will increase its damage when set off.</li>
+                        <li>Keep an eye on monsters when it's weakened and it's ready to be captured.</li>
+                        <li>Don't farm crystals, herbs etc during a hunt. There are plenty of time
+                            doing that in solo play.</li>
+                        <li>Please do not idle during a hunt.</li>
+                    </ul>
+                    <h4>Useful Tips</h4>
+                    <ul>
+                        <li>Combining items is very important learn how to do it. Combination List avalable<a href="https://monsterhunter.fandom.com/wiki/MHW:_Combination_List"> HERE.</a></li>
+                        <li>Monster elemental weakness can be checked on their armour sets. If 
+                            it has a negative value, this represents their elemental weakness.</li>
+                        <li>Keep checking weapon trees from online source such as <a href="https://monsterhunterworld.wiki.fextralife.com/Weapons"> THIS </a> before crafting your weapons.<br/>
+                            It will give you a more detailed idea on what the final outcome of each weapon types.</li>
+                        <li>For new players, to unlock armour abilities each skill should total up to ten which is level 1 
+                            so doing the math is not so bad and for some armour skills, if it is available it can go up to 
+                            level 5 to unlock the maximum amount.</li>
+                    </ul>
+            </div>
+        </section>    
+        <footer id="footer">
+            <p>Most images used in this website are captured in-game. This website
+                is a fanbase website that gives tips and information about the game that targets new or current players.</p>    
+            <p>Created by: Romnick Agsaoay</p>
+        </footer>        
+        <script>            
+            function myFunction() {   
+                    var x = document.getElementById("navigation");
+                    if (x.className === "navbar") {
+                        x.className += " responsive";
+                    } else {
+                     x.className = "navbar";
+                    }
+                }
+
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("img1");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            var img = document.getElementById("img2");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            var img = document.getElementById("img3");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            var img = document.getElementById("img4");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            var img = document.getElementById("img5");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            var img = document.getElementById("img6");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            var img = document.getElementById("img7");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            var img = document.getElementById("img8");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            var img = document.getElementById("img9");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            var img = document.getElementById("img10");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            var img = document.getElementById("img11");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            var img = document.getElementById("img12");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+                 modal.style.display = "none";
+            }
+            </script>               
+    </body>
+</html>

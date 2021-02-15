@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Monster Hunter World fansite</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    </head>
+    <body>
+        <header id="branding">
+            <h1>Monster Hunter World</h1>
+            <p>fansite</p>            
+        </header>
+        <nav class="navbar" id="navigation">                      
+            <a href="index.html">Home</a>
+            <a href="index.html">Play Styles</a>
+            <a href="Monsters.html">Monsters</a>
+            <a href="otherinfo.html">Other info</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+            </a>                   
+        </nav>
+        <section id="contactinfo">
+            <h2>Contact Us</h2>
+            <p>Please fill in this form for any inquiries you may have</p>
+            <div class="contactform">
+                <form action="mailto:R.Agsaoay@salford.ac.uk" enctype="text/plain" method="post">
+                    <p>First Name: <input name="First_Name" type="text" placeholder="Enter First Name" id="First_Name"></p>
+                    <p>Last Name: <input name="Last_Name" type="text" placeholder="Enter Last Name" id="Last_Name"></p>
+                    <p>E-mail address: <input name="E-mail" type="text" placeholder="Enter Email" id="E-mail"></p>
+                    <p>Comment:</p>
+                    <p><textarea name="Comment" placeholder="any comments" id="Comment"></textarea></p>
+                    <p><input type="submit" name="Submit" value="Submit"></p>
+                </form>   
+            </div>                
+        </section>
+            
+        <footer id="footer">
+            <p>Most images used in this website are captured in-game. This website
+                is a fanbase website that gives tips and information about the game that targets new or current players.</p>
+            <p>Created by: Romnick Agsaoay</p>
+        </footer>        
+        <script>
+            function myFunction() {
+                    var x = document.getElementById("navigation");
+                    if (x.className === "navbar") {
+                        x.className += " responsive";
+                    } else {
+                     x.className = "navbar";
+                    }
+                }
+            </script>               
+    </body>
+</html>
